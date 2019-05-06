@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Auto-complete form using JavaScript</title>
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  	<h1> Auto-complete form using JavaScript </h1>
+
+	<p> If you liked it, leave a comment below </p>
+
+	<form>
+		<fieldset>
+			<legend>Registration Info</legend>
+			<label for ="username">Username:</label>
+			<input type = "text" name = "Username" id = "username" required><br/>
+			<label for = "email">email: </label>
+			<input type = "email" name = "email" id = "email" required><br/>
+		</fieldset>
+		<input type="checkbox" id="same" name="same" onchange= "RegistrationInfo()"/>
+		<label for = "same">Did you enter the following registration info?</label>
+
+		<br>
+		<br>
+				
+		<fieldset> 
+			<legend>Registration Info Verification</legend>
+			<label for ="Username">Username:</label>
+			<input type = "text" name = "username_v" id = "username_verify" required><br/>
+			<label for = "email">email:</label>
+			<input type = "email" name = "email_v" id = "email_verify" required><br/>
+		</fieldset>
+
+			<input type = "submit" value = "Verify"/>
+
+	</form>
+
+    <script  src="js/index.js"></script>
+
+
+</body>
+
+</html>
